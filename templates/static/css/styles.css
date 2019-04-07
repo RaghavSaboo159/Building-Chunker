@@ -36,6 +36,12 @@ body, html {
     /*z-index:-1;*/
 }
 
+@media (max-width: 900px) {
+	#particles-js {
+		height: 10%;
+	}
+}
+
 .header {
   border-bottom: 6px solid red;
 }
