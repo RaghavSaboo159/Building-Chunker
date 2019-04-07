@@ -34,6 +34,17 @@ body, html {
   outline: none;
 }
 
+.nav-center {
+	width: 100%!important;
+	text-align: center!important;
+	/*background-color: blue;*/
+}
+
+.nav-center > li {
+	float: none;!important;
+	display: inline-block!important;
+}
+
 #particles-js {
     width:100%;
     height:100%;
