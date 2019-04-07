@@ -43,32 +43,32 @@
 	</nav>
 
 	<nav class="navbar navbar-expand-lg navbar-light">
-	  <div class="w-100 text-center align-self-center" id="navbarToggler">
-	    <ul class="navbar-nav ml-auto nav-center">
+	  <div class="d-flex w-100">
+	    <ul class="navbar-nav nav-pills ml-auto mx-auto justify-content-center w-100">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#about">Introduction</a>
+	        <a class="nav-link active intro" onclick="intro()">Introduction</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Theory</a>
+	        <a class="nav-link theory" onclick="theory()">Theory</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Objective</a>
+	        <a class="nav-link objective" onclick="objective()">Objective</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Experiment</a>
+	        <a class="nav-link experiment" onclick="experiment()">Experiment</a>
 	      </li> 
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Quizzes</a>
+	        <a class="nav-link quiz" onclick="quiz()">Quizzes</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Procedure</a>
+	        <a class="nav-link procedure" onclick="procedure()">Procedure</a>
 	      </li>    
 	    </ul>
 	  </div>
 	</nav>
 
 	
-	<div class="container-fluid experiment h-25">
+	<div class="container-fluid experiment-bg h-25">
 		<div class="row h-100">
 			<div class="col align-self-center text-center">
 				<h1 class="txt-blue bold">
@@ -86,7 +86,7 @@
 				<div class="container-fluid h-100">
 
 					<!-- Introduction -->
-					<div class="row blocko">
+					<div class="row blocko" id="intro">
 						<div class="col text-justify">
 							<h1>Introduction</h1>
 							<br>
@@ -112,7 +112,7 @@
 						</div>
 					</div>
 
-					<div class="row blocko">
+					<div class="row blocko" id="theory">
 						<div class="col text-justify">
 							<h1>Theory</h1>
 							<br>
@@ -144,6 +144,79 @@
 							</p>
 						</div>
 					</div>
+					
+					<div class="row blocko" id="objective">
+						<div class="col text-justify">
+							<h1>Objective</h1>
+							<br>
+							<p>
+								The objective of the experiment is to know the importance of selecting proper features for training a model and size of training corpus in learning how to do cunking.
+							</p>
+						</div>
+					</div>
+
+					<div class="row blocko" id="experiment">
+						<div class="col text-justify">
+							<h1>Experiment</h1>
+						</div>
+					</div>
+
+					<div class="row blocko" id="quiz">
+						<div class="col text-justify">
+							<h1>Quiz</h1>
+							<br>
+							<ul class="list-group">
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									How is training model formed in CRF?
+									<span class="badge badge-primary badge-pill">5</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									How is training model formed in TnT?
+									<span class="badge badge-primary badge-pill">5</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									How is testing done in CRF?
+									<span class="badge badge-primary badge-pill">5</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									How is testing done in TnT?
+									<span class="badge badge-primary badge-pill">5</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									Which features are helpful for training a model for chunking?
+									<span class="badge badge-primary badge-pill">10</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row blocko" id="procedure">
+						<div class="col text-justify">
+							<h1>Procedure</h1>
+							<br>
+
+							<ol class="list-group list-group-flush">
+								<li class="list-group-item">
+									1. Select the language.
+									<span class="badge badge-primary badge-pill">Dropdowns will follow</span>
+								</li>
+								<li class="list-group-item">
+									2. Select corpuse size
+								</li>
+								<li class="list-group-item">
+									3. Select Algorithm
+								</li>
+								<li class="list-group-item">
+									4. Select feature
+								</li>
+								<li class="list-group-item">
+									<span class="badge badge-primary badge-pill">Corresponding Accuracy will be shown</span>
+								</li>
+							</ol>
+							
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -153,5 +226,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./static/js/particles.js"></script>
+	<script type="text/javascript" src="./static/js/script.js"></script>
 </body>
 </html>
