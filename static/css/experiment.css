@@ -81,6 +81,11 @@ a:hover {
 	height: 100%;
 }
 
+.filler {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
 .bg-git {
 	opacity: 50%;
 	background: url("../img/bg-git.png");
