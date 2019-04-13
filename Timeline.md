@@ -1,15 +1,20 @@
 # Timeline
 
-## 2-7th March
+## 2-10th March : FrontEnd Focus
 
-1. Decide the routes, base code structure
+1. Decided the routes, base code structure
 2. Basic Design for the Website.
-3. Finish everything but the experiment itself definitievly.
-4. Plan the experiment
-5. Quizzes
+3. Finished everything but the experiment
+4. Experiment Planning finished.
 
-## 8-14th March
+## 11-13th March: Backend Focus
 
-1. Experiment
-2. Forum
-3. Continuous Integration
+1. Flask Integration Complete 
+> The basic routing of the flask app is done
+
+## 14-16th March: Database Focus
+
+1. News Forum to be made. Database planning already done
+2. Add the 404 page.
+3. Test the Experiment
+4. Improve readability
