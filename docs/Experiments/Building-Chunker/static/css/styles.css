@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro');
+
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway';
+}
+
+.main-nav {
+	background-color: rgba(0,53,81,1);
+}
+
+.main-nav a {
+	color: white;
+}
+
+.main-nav a:hover {
+	color: white;
+	opacity: 80%;
+}
+
+.navbar-toggler {
+  padding: 0.75em;
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+#particles-js {
+    position : absolute;
+    width:95%;
+    height:50%;
+    /*z-index:-1;*/
+}
+
+.header {
+  border-bottom: 6px solid red;
+}
+
+.blocko {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.op-50 {
+	opacity: 50%;
+}
+
+.txt-blue {
+	color: rgba(0,53,81,1);
+}
+
+.bold {
+	font-weight: bolder;
+}
+
+h1 {
+	font-family: 'Source Sans Pro';
+}
