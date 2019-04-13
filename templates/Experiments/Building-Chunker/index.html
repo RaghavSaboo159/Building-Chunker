@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
+	<!-- Particles JS is a library for building the particles seen on the website -->
 	<script type="text/javascript" src="./static/js/particles.min.js"></script>
 
 </head>
@@ -22,8 +24,9 @@
 		<div id="particles-js"></div>
 	</div>
 
+	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg main-nav header">
-	  <a href="./index.html" class="logo">
+	  <a href="{{ url_for('index') }}" class="logo">
 	  	<h1><strong>NLP@IIIT-H</strong></h1>
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,14 +36,16 @@
 	  <div class="collapse navbar-collapse" id="navbarToggler">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
+	        <a class="nav-link" href="{{ url_for('index', _anchor='about') }}">About</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Experiments</a>
+	        <a class="nav-link" href="{{ url_for('experiments') }}">Experiments</a>
 	      </li>      
 	    </ul>
 	  </div>
 	</nav>
+
+	<!-- Secondary Navbar for experiment -->
 
 	<nav class="navbar navbar-expand-lg navbar-light">
 	  <div class="d-flex w-100">
@@ -67,7 +72,8 @@
 	  </div>
 	</nav>
 
-	
+	<!-- Header Image for Experiment -->
+
 	<div class="container-fluid experiment-bg h-25">
 		<div class="row h-100">
 			<div class="col align-self-center text-center">
@@ -77,6 +83,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Section Content for Experiment -->
 
 	<div class="container blocko">
 		

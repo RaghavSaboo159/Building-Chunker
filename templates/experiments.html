@@ -23,7 +23,7 @@
 	</div>
 
 	<nav class="navbar navbar-expand-lg main-nav header">
-	  <a href="./index.html" class="logo">
+	  <a href="{{ url_for('index') }}" class="logo">
 	  	<h1><strong>NLP@IIIT-H</strong></h1>
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,10 @@
 	  <div class="collapse navbar-collapse" id="navbarToggler">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
+	        <a class="nav-link" href="{{ url_for('index', _anchor='about') }}">About</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="experiments.html">Experiments</a>
+	        <a class="nav-link" href="{{ url_for('experiments') }}">Experiments</a>
 	      </li>      
 	    </ul>
 	  </div>
@@ -57,7 +57,7 @@
 			<div class="container-fluid" id="project5">
 	            <div class="row justify-content-center no-gutters">
 	              <div class="col-lg-6">
-	                <img class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;" src="./static/img/experiment.png" alt="Shake it Off">
+	                <img class="img-fluid experiment-img" src="./static/img/experiment.png" alt="Shake it Off">
 	              </div>
 	              <div class="col-lg-6 order-sm-first">
 	                <div class="text-center h-100 project">
@@ -67,10 +67,10 @@
 	                      <p class="mb-0">
 	                        Chunking is an analysis of a sentence which identifies the constituents (noun groups, verbs, verb groups, etc.) which are correlated. These are non-overlapping regions of text.
 	                        <br>
-	                        <i>The objective of the experiment is to know the importance of selecting proper features for training a model and size of training corpus in learning how to do cunking. </i>
+	                        <i>The objective of the experiment is to know the importance of selecting proper features for training a model and size of training corpus in learning how to do chunking. </i>
 	                      </p>
 	                      <br>
-	                      <a href="./Experiments/Building-Chunker/index.html" class="btn btn-light">Visit</a>
+	                      <a href="{{ url_for('buildingchunker')  }}" class="btn btn-light">Visit</a>
 	                    </div>
 	                  </div>
 	                </div>
