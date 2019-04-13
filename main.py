@@ -28,6 +28,7 @@ def buildingchunker():
 @app.route("/New", methods=["GET"])
 def new():
 	posts = db.engine.execute("SELECT * FROM POSTS")
+
 	return render_template("new.html", posts = posts)
 
 @app.route("/New", methods=["POST"])

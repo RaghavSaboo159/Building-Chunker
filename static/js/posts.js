@@ -31,7 +31,8 @@ $("#btn-post").click(function() {
 	var topic = $("#topic").val();
 	var post = $("#textarea").val();
 
-	addData(name, topic, post);
+	if(name != "" && topic != "" && post != "")
+		addData(name, topic, post);
 
 	return true;
 });
