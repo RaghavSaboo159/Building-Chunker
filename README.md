@@ -21,7 +21,8 @@ The following are required on your system in order to test the application
 1. Python
 
 `    sudo apt-get update
-    sudo apt-get install python3.6
+`
+`    sudo apt-get install python3.6
 `
 	Check the version of python using python3  -v. Python3.6 + is recommended.
 
