@@ -230,31 +230,30 @@ function answer()
 					
 					document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">86.87</span>";
 				}
-				else { 
+				else 
 					
 				document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">85.19</span>";
-				}
 			}
-			else if (z=="CRF")
-			{
-				if (w=="only lexicon") 
-				{
-
-					document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">80.48</span>";
-				}
-				else if (w=="only pos") 
-				{
-
-					document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">95.1</span>";
-				}
-				else 
-				{
-
-					document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">95.45</span>";
-				}
-			} 
 		} 
-	if(y=="100k")
+		else if (z=="CRF")
+		{
+			if (w=="only lexicon") 
+			{
+				
+				document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">80.48</span>";
+			}
+			else if (w=="only pos") 
+			{
+				
+				document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">95.1</span>";
+			}
+			else 
+			{
+				
+				document.getElementById('p1').innerHTML="Accuracy is: <span class=\"badge badge-primary badge-pill\">95.45</span>";
+			}
+		} 
+	}if(y=="100k")
 	{
 		if (z=="HMM")
 		{
