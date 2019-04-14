@@ -34,5 +34,5 @@ $("#btn-post").click(function() {
 	if(name != "" && topic != "" && post != "")
 		addData(name, topic, post);
 
-	return true;
+	return false;
 });

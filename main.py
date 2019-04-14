@@ -31,6 +31,11 @@ def new():
 
 	return render_template("new.html", posts = posts)
 
+@app.route("/Forum", methods=["GET"])
+def forum():
+	posts = db.engine.execute("SELECT * FROM POSTS")
+	return render_template("new.html", posts = posts)
+
 @app.route("/New", methods=["POST"])
 def createpost():
 	new = request.get_json()

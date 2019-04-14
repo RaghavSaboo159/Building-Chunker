@@ -164,57 +164,72 @@
 					</div>
 
 					<div class="row blocko" id="experiment">
-						<div class="col text-justify">
+						<div class="col">
 							<h1>Experiment</h1>
 
-							<br>
+							<ol>
+								<li class="blocko">
+								    <div class="category_div" id="category_div">Please specify language:
+								        <select name="category" class="required-entry" id="category" onclick="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+								            <option value="">Select Language</option>
+								            <option value="English">English</option>
+								            <option value="Hindi">Hindi</option>
+								        </select>
+								    </div>
+								</li>
+								<li class="blocko">
+								    <div class="sub_category_div" id="sub_category_div">Please select the size of a corpus:
+								        <script type="text/javascript" language="JavaScript">
+								            document.write('<select name="subcategory" id="subcategory" onchange="javascript: dynamicdropdownone(this.options[this.selectedIndex].value);"><option value="">Please select the size of a corpus</option></select>')
+								        </script>
+								        <noscript>
+								            <select name="subcategory" id="subcategory">
+								                <option value="">Please select the size of a corpus:</option>
+								            </select>
+								        </noscript>
+								    </div>
+								</li>
+								
+								<li class="blocko">
+								    <div class="sub_subcategory_div" id="sub_subcategory_div">Please select the algorithm for training:
+								        <script type="text/javascript" language="JavaScript">
+								            document.write('<select name="sub_subcategory" onchange="javascript: dynamicdropdowntwo(this.options[this.selectedIndex].value);" id="sub_subcategory"><option value="">Please select the algorithm for training</option></select>')
+								        </script>
+								        <noscript>
+								            <select name="sub_subcategory" id="sub_subcategory">
+								                <option value="">Please select the algorithm for training:</option>
+								            </select>
+								        </noscript>
+								    </div>
+								</li>
+							    
+							    <li class="blocko">
+								    <div class="sub_subbcategory_div" id="sub_subbcategory_div">Please select the feature for training:
+								        <script type="text/javascript" language="JavaScript">
+								            document.write('<select name="sub_subbcategory" onchange="javascript: urlRedirectTo(this.options[this.selectedIndex].value);" id="sub_subbcategory"><option value="">Please select the feature for training</option></select>')
+								        </script>
+								        <noscript>
+								            <select name="sub_subbcategory" id="sub_subbcategory">
+								                <option value="">Please select the feature for training:</option>
+								            </select>
+								        </noscript>
+								    </div>
+								</li>
+							</ol>
 
-							<p class="code d-inline">1. Select a Language</p>
-							<div class="d-inline">
-								<select>
-								  	<option value="">Please select framework vesrion</option>
-								</select>
-							</div>
+						    <p class="blocko" id="pi"></p>
+						    
+						    <div class="container-fluid">
+						    	<div class="row">
+						    		<div class="col">
+									    <button type="button" style="display:none;" class="btn btn-light" onclick="answer();" id="accuracy">Check Accuracy</button>
+									</div>
+									<div class="col">						    
+						    			<p class="blocko float-right" id="p1"></p>
+						    		</div>
+						    	</div>
+						    </div>
 
-							<div class="filler"></div>
-
-							<p class="code d-inline">2. First step is to train a corpus, select the size of a corpus</p>
-							<div class="d-inline">
-								<select>
-								  	<option value="">Please select framework vesrion</option>
-								</select>
-							</div>
-
-							<div class="filler"></div>
-
-							<p class="code d-inline">3. Select the algorithm for training</p>
-							<div class="d-inline">
-								<select>
-								  	<option value="">Please select framework vesrion</option>
-								</select>
-							</div>
-
-							<div class="filler"></div>
-
-							<p class="code d-inline">4. Now, Select feature for training</p>
-							<div class="d-inline">
-								<select>
-								  	<option value="">Please select framework vesrion</option>
-								</select>
-							</div>
-
-							<div class="filler"></div>
-
-							<div class="answer-prompt">
-								Training is completed
-								<br>
-								Now, we have to do testing, a corpus of size 2k is chosen.
-								<br>
-	
-								<div class="filler"></div>
-
-								<button class="btn btn-light">Check Accuracy</button>
-							</div>
 						</div>
 					</div>
 
@@ -287,5 +302,6 @@
 	<!-- Custom JS -->
 	<script type="text/javascript" src="./static/js/particles.js"></script>
 	<script type="text/javascript" src="./static/js/script.js"></script>
+	<script type="text/javascript" src="./static/js/building-chunker.js"></script>
 </body>
 </html>
