@@ -5,6 +5,17 @@ function urlRedirectTo(obj)
 			$("#accuracy").show();
 			}); 
 }
+		function answer1()
+{
+	document.getElementById("Q1").value="";	
+	document.getElementById("Q2").value="";	
+	document.getElementById("Q3").value="";	
+	document.getElementById("Q4").value="";	
+	document.getElementById("Q5").value="";	
+	alert('Answers will be evaluated soon!!!');
+}
+
+
 function answer()
 {
 	var x=document.getElementById('category').value;
@@ -327,7 +338,7 @@ function dynamicdropdown(listindex)
     document.getElementById('pi').innerHTML="";
     document.getElementById('p1').innerHTML="";
     $(document).ready(function(){
-            $("button").hide();
+            $("#accuracy").hide();
             }); 
            
 	document.getElementById("sub_subcategory").length = 0;
