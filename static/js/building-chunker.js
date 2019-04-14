@@ -4,11 +4,6 @@ function urlRedirectTo(obj)
 	$(document).ready(function(){
 			$("#accuracy").show();
 			}); 
-           
-            //if('wordpress_version1' == obj)
-	//window.location = 'https://wordpress.org/download/';
-	//if('wordpress_version2' == obj)
-	//window.location = 'https://wordpress.org/download/';
 }
 function answer()
 {
@@ -16,10 +11,6 @@ function answer()
 	var y=document.getElementById('subcategory').value;
 	var z=document.getElementById('sub_subcategory').value;
 	var w=document.getElementById('sub_subbcategory').value;
-	console.log(x);
-	console.log(y);
-	console.log(z);
-	console.log(w);
 	if(x=="English")
 	{
 		if(y=="1k")
@@ -340,15 +331,15 @@ function dynamicdropdown(listindex)
             }); 
            
 	document.getElementById("sub_subcategory").length = 0;
-	document.getElementById("sub_subcategory").options[0]=new Option("Please select the algorithm for training","");
+	document.getElementById("sub_subcategory").options[0]=new Option("Select the above option","");
     document.getElementById("sub_subbcategory").length = 0;
-    document.getElementById("sub_subbcategory").options[0]=new Option("Please select the feature for training","");
+    document.getElementById("sub_subbcategory").options[0]=new Option("Select the above option","");
 	document.getElementById("subcategory").length = 0;
 	switch (listindex)
 	{
 		case "English" :
 		case "Hindi"    :
-			document.getElementById("subcategory").options[0]=new Option("Please select the size of a corpus","");
+			document.getElementById("subcategory").options[0]=new Option("Select the size of a corpus","");
 			document.getElementById("subcategory").options[1]=new Option("1k","1k");
 			document.getElementById("subcategory").options[2]=new Option("10k","10k");
 			document.getElementById("subcategory").options[3]=new Option("100k","100k");
@@ -357,7 +348,7 @@ function dynamicdropdown(listindex)
 			break;
 
 		default:
-			document.getElementById("subcategory").options[0]=new Option("Please select the size of a corpus","");
+			document.getElementById("subcategory").options[0]=new Option("Select the above option","");
 			break;
 	}
 	return true;
@@ -372,14 +363,14 @@ function dynamicdropdownone(listindex)
 		case "10k" :
 		case "100k" :
 		case "200k" :
-			document.getElementById("sub_subcategory").options[0]=new Option("Please select the algorithm for training","");
+			document.getElementById("sub_subcategory").options[0]=new Option("Select the algorithm for training","");
 			document.getElementById("sub_subcategory").options[1]=new Option("HMM","HMM");
 			document.getElementById("sub_subcategory").options[2]=new Option("CRF","CRF");
 			break;
 
 
 		default:
-			document.getElementById("sub_subcategory").options[0]=new Option("Please select the algorithm for training","");
+			document.getElementById("sub_subcategory").options[0]=new Option("Select the above option","");
 			break;
 	}
 	return true;
@@ -392,13 +383,13 @@ function dynamicdropdowntwo(listindex)
 	{
 		case "HMM" :
 		case "CRF" :
-			document.getElementById("sub_subbcategory").options[0]=new Option("Please select the feature for training","");
+			document.getElementById("sub_subbcategory").options[0]=new Option("Select the feature for training","");
 			document.getElementById("sub_subbcategory").options[1]=new Option("only lexicon","only lexicon");
 			document.getElementById("sub_subbcategory").options[2]=new Option("only pos","only pos");
 			document.getElementById("sub_subbcategory").options[3]=new Option("lexicon and pos","lexicon and pos");
 			break;
 		default:
-			document.getElementById("sub_subbcategory").options[0]=new Option("Please select the feature for training","");
+			document.getElementById("sub_subbcategory").options[0]=new Option("Select the above option","");
 			break;
 	}
 	return true;
