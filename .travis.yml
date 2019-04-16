@@ -12,4 +12,4 @@ before_script:
 # This is the script that enables travis to run the tests
 # There are many ways to do dependeing on how you want travis to run and get you coverage
 script: 
-  python3 main.py
+  python3 tests.py
