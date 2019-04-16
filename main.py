@@ -11,7 +11,7 @@ db = create_engine("sqlite:///forum.db")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-	return render_template("index.html");
+	return render_template("sfdbgsxdb.html");
 
 @app.route("/Experiment", methods=["GET", "POST"])
 def experiments():
