@@ -1,0 +1,16 @@
+language : python 
+python : 
+    - 3.5
+    - 3.6
+install :
+  -pip install -r requirements.txt
+  -pip3 install -r requirements.txt
+
+before_script:
+  - export FLASK_DEBUG=1
+
+# command to run tests 
+# This is the script that enables travis to run the tests
+# There are many ways to do dependeing on how you want travis to run and get you coverage
+script: 
+  python3 main.py
